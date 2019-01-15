@@ -1,0 +1,129 @@
+.description-product {
+    color: #ffffff;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    position: relative; 
+}
+
+.description-product > .title {
+    /* margin-top: 40px; */
+    margin-bottom: 12%;
+    font-size: 1.563rem;
+}
+
+.description-product > .item {
+    font-size: 1.25rem;
+    margin-bottom: 5%;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-product > .item.-heart {
+    position: absolute;
+    /* transform: translateX(-100%); */
+    left: -87px;
+    top: 8px;
+    cursor: pointer;
+    width: 33px;
+    height: 29px;
+}
+
+.description-product > .item.-star {
+    cursor: pointer;
+    width: 170px;
+}
+
+.description-product .star {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.description-product .star.-active > .icon {
+    display: none;
+}
+
+.description-product .star.-active > .-active {
+    display: block;
+}
+
+.description-product .icon {
+    transition: transform 100ms linear; /* tanto na ida quanto na volta */
+}
+
+.description-product .icon:hover {
+    transform: scale(1.2);
+}
+
+.description-product .icon.-active {
+    display: none;
+}
+
+.description-product > .item.-active .icon {
+    display: none;
+}
+
+.description-product > .item.-active .icon.-active {
+    display: block;
+}
+
+.description-product .item:nth-child(4) { /* margin-left no terceiro elemento do pai */
+    margin-left: 7px;   
+}
+
+.description-product > .item > strong {
+    text-transform: uppercase;
+}
+
+.description-product > .text {
+    font-size: 1.125rem;
+    margin-bottom: 12%;
+    margin-top: 15%;
+}
+
+.description-product > .more {
+    margin-bottom: 15%;
+}
+
+.description-product > .more > a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.125rem;   
+}
+
+
+
+
+
+@media (max-width: 1050px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 950px), (orientation: portrait) {
+    html {
+        font-size: 90%;
+    }
+
+    .description-product > .title {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 15%;
+    }
+    
+    .description-product > .item.-heart {
+        /* position: static; desafio da aula 016 já estava feito */
+        left: auto;
+        top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .description-product > .title {
+        font-size: 2rem;
+    }
+
+    .description-product > .item.-heart {
+        position: static;
+    }
+}

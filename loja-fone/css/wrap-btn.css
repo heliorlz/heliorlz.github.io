@@ -1,0 +1,29 @@
+/* organizar e alinhar botoes feitos anteriormente atraves do wrapper-btn */
+.wrap-btn {
+    display: flex;
+}
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    .wrap-btn {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 950px), (orientation: portrait) {
+    .wrap-btn {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrap-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+}

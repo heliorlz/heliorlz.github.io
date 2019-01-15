@@ -1,0 +1,30 @@
+.container-store {
+    box-sizing: border-box;
+    background-color: #e24647;
+    padding: 5% 6% 6.5% 0;
+    width: 90%;
+    max-width: 1330px;
+    margin: 0 auto;
+    height: 100%;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+@media (max-width: 1330px) {
+    .container-store {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 950px), (orientation: portrait) {
+    .container-store {
+        padding-right: 0;
+    }
+}
+
+
+

@@ -1,0 +1,27 @@
+.wrap-description-product {
+    margin-top: 18%;
+    width: 33%;
+    float: right;
+}
+
+
+
+
+
+
+@media (max-width: 950px), (orientation: portrait) {
+    .wrap-description-product {
+        display: block;
+        margin: 0 auto;
+        float: none;
+        position: static;
+        width: 90%;
+        max-width: 550px;
+    }
+}
+
+
+
+
+
+
