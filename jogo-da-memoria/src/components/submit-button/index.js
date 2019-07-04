@@ -32,9 +32,10 @@ const submitButton = (function() {
       $errorUser.classList.add("-active");
       $user.focus();
       return false;
+    } else {
+      $errorUser.classList.remove("-active");
+      return true;
     }
-
-    return true;
   };
 
   module._checkPassword = () => {
@@ -44,16 +45,16 @@ const submitButton = (function() {
     const $errorPassword = document.querySelector(".error-password");
 
     const $eyeCollabCode = document.querySelector(".eye-collabcode");
-    console.log($eyeCollabCode);
 
     if (passwordValue.length <= 0) {
       $errorPassword.classList.add("-active");
       $eyeCollabCode.style.margin = "-38px 0 0 auto";
       $password.focus();
       return false;
+    } else {
+      $errorPassword.classList.remove("-active");
+      return true;
     }
-
-    return true;
   };
 
   module.handleClick = (event, path) => {
